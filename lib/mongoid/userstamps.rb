@@ -21,7 +21,11 @@ module Mongoid
     end
 
     def self.config
-      Mongoid::Userstamps::Config.module_eval(&Proc.new)
+      if block_given?
+        Mongoid::Userstamps::Config.module_eval do |config|
+          yield config
+        end
+      end
     end
   end
 end
