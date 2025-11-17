@@ -6,6 +6,7 @@ end
 SimpleCov.start if ENV["COVERAGE"]
 
 require "minitest/autorun"
+require "logger"
 require "mongoid"
 require "pry"
 
