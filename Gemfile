@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gemspec
 
-mongoid_version = ENV["MONGOID_VERSION"] || "8.0.0"
+mongoid_version = ENV["MONGOID_VERSION"] || "9.0.0"
 
 gem "rake"
 gem "mongoid", "~> #{mongoid_version}"
